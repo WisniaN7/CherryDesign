@@ -1,0 +1,74 @@
+:root {
+  --cherry: #ce1d5d;
+  --cherry-dark: #b52a63;
+  --green: #54af47;
+  --green-dark: #408d38;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  section {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cherry);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #logo {
+    width: calc(100vw / 1.618);
+    height: 100vh;
+    background-image: url("../img/Logo_W.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+  }
+
+  #login {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .25);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+  }
+
+  #login form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 60px;
+  }
+
+  #login form input, #login form button {
+    width: 275px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-family: Montserrat;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+
+  #login form button {
+    width: 297px;
+    padding: 0;
+    cursor: pointer;
+  }
+}

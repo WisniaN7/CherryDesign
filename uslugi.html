@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Jakub Wiśniewski">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CherryDesign</title>
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/uslugi.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="shortcut icon" href="img/Logo_I.png">
+  <script src="scripts/loading.js"></script>
+</head>
+
+  <body>
+    <div id="loader">
+      <div id="anim"></div>
+    </div>
+    <header id="header" class="header-transparent">
+      <a href="index.php" onmouseover="iconIn()" onmouseout="iconOut()">
+        <div id="icon"></div>
+        <div id="icon-txt" class="icon-txt-out"></div>
+      </a>
+      <div id="menu-button" onclick="toggleMenu()"></div>
+      <div id="mask"></div>
+      <nav id="menu" class="menu-hidden">
+        <ul>
+          <a href="index.php"><li>strona główna</li></a>
+          <a href="uslugi.html"><li>usługi</li></a>
+          <a href="kontakt.html"><li>kontakt</li></a>
+        </ul>
+      </nav>
+    </header>
+
+  </body>
+
+  <script src="scripts/main.js"></script>
+
+</html>

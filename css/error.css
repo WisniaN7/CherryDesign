@@ -1,0 +1,54 @@
+:root {
+  --cherry: #ce1d5d;
+  --cherry-dark: #b52a63;
+  --green: #54af47;
+  --green-dark: #408d38;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--cherry);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p, a {
+  color: white;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  font-size: 3vh;
+  line-height: 1.3;
+}
+
+p::first-line {
+  font-size: 35vh;
+  transform: translateY(-50px);
+  transform-origin: 50% 50%;
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 10px 0 #cccccc, 0 11px 0 #cccccc, 0 12px 0 #cccccc, 0 13px 0 #cccccc, 0 14px 0 #cccccc, 0 15px 0 #cccccc, 0 16px 0 #cccccc, 0 17px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+}
+
+a {
+  background-color: rgba(255, 255, 255, 0.15);
+  font-size: 2vh;
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  transition: 500ms;
+  margin-top: 50px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.25);
+}
+
+a:hover {
+  background-color: rgba(255, 255, 255, 0.33);
+}

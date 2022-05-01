@@ -1,0 +1,329 @@
+:root {
+  --cherry: #ce1d5d;
+  --cherry-dark: #b52a63;
+  --green: #54af47;
+  --green-dark: #408d38;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: white;
+  font-family: Montserrat;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body #loader {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: 1000;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+}
+
+body #anim {
+  width: 50%;
+  height: 50vh;
+  background-image: url("../img/Loading.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.loader-hidden {
+  animation: fadeOut 300ms forwards;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+}
+
+header a #icon, #icon-txt {
+  display: none;
+}
+
+header #menu-button {
+  display: block;
+  width: 45px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-top: 10px;
+  margin-left: calc(50% - 22.5px);
+  cursor: pointer;
+  animation: rotateOut 500ms forwards ease-in-out;
+}
+
+.menu-active {
+  animation: rotateIn 500ms forwards ease-in-out !important;
+}
+
+.menu-visible {
+  animation: menuIn 300ms forwards ease-in-out;
+}
+
+.menu-hidden {
+  animation: menuOut 300ms forwards ease-in-out;
+}
+
+header nav ul {
+  margin-top: 10px;
+}
+
+header nav ul:first-child {
+  border-top: 1px solid var(--cherry);
+}
+
+header nav ul li {
+  width: 100%;
+  color: var(--cherry);
+  background-color: white;
+  padding: 25px 0;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  border-bottom: 1px solid var(--cherry);
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: var(--cherry);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer nav ul {
+  margin-left: 25px;
+}
+
+footer nav ul a {
+  color: white;
+  font-family: Montserrat;
+}
+
+footer #icon-white {
+  width: 75px;
+  height: 65px;
+  background-image: url("../img/Logo_I_W.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header a {
+    display: flex;
+    align-items: center;
+  }
+
+  header a #icon {
+    display: block;
+    width: 55px;
+    height: 40px;
+    background-image: url("../img/Logo_I.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-left: 30px;
+  }
+
+  header a #icon-txt {
+    width: 100px;
+    height: 15px;
+    background-image: url("../img/Logo_N.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: 15px;
+    display: block;
+  }
+
+  .icon-txt-in {
+    animation: slideInLeft 300ms ease-in-out forwards;
+  }
+
+  .icon-txt-out {
+    animation: slideOutLeft 300ms ease-in-out forwards;
+  }
+
+  header #menu-button {
+    display: none;
+  }
+
+  .header-colored {
+    background-color: var(--cherry);
+    transition: 300ms;
+  }
+
+  .header-transparent {
+    background-color: white;
+    transition: 300ms;
+  }
+
+  .header-colored #icon {
+    background-image: url("../img/Logo_I_W.svg");
+  }
+
+  .header-colored #icon-txt {
+    background-image: url("../img/Logo_N_W.svg");
+  }
+
+  .header-colored nav ul li {
+    color: white;
+  }
+
+  header nav ul li, header nav ul:first-child {
+    border: none;
+  }
+
+  header nav ul {
+    margin: 0 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  header nav ul li {
+    width: auto;
+    height: auto;
+    color: var(--cherry);
+    background-color: transparent;
+    padding: 17px 35px;
+    font-family: Montserrat;
+    font-size: 20px;
+    transition: 300ms;
+  }
+
+  header nav ul li:hover {
+    font-size: 22px;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes menuIn {
+  from {
+    margin-top: -300px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes menuOut {
+  from {
+    margin-top: 0;
+  }
+  to {
+    margin-top: -300px;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+  to {
+  transform: translateX(0);
+  opacity: 1;
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+  opacity: 1;
+  transform: translateX(0);
+  }
+  to {
+  opacity: 0;
+  transform: translateX(-100%);
+  }
+}
+
+@keyframes rotateIn {
+  0% {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, -180deg);
+    opacity: 1;
+  }
+  40%{
+    opacity: 0;
+  }
+  50% {
+    background-image: url("../img/Logo_I.svg");
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    transform-origin: center;
+    transform: none;
+    background-image: url("../img/Logo_I.svg");
+    opacity: 1;
+  }
+}
+
+@keyframes rotateOut {
+  0% {
+    transform-origin: center;
+    transform: none;
+    opacity: 1;
+  }
+  40%{
+    opacity: 0;
+  }
+  50%{
+    background-image: url("../img/Menu.svg");
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, -180deg);
+    background-image: url("../img/Menu.svg");
+    opacity: 1;
+  }
+}

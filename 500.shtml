@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jakub Wiśniewski | CherryDesign">
+    <title>500 Wewnętrzny błąd serwera</title>
+    <link rel="stylesheet" href="css/error.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="shortcut icon" href="img/Logo_I.png">
+  </head>
+  <body>
+    <p>500</br>serwer napotkał niespodziewane trudności, które uniemożliwiły zrealizowanie żądania :(</p>
+    <a href="index.php">Wróć na stronę główną</a>
+  </body>
+</html>

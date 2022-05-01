@@ -1,0 +1,84 @@
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section #bg {
+  background-image: url("../img/Logo_V.svg");
+  width: calc(100vw / 1.618);
+  height: calc(100vh / 1.618);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: fixed;
+  z-index: -1000;
+  opacity: .33;
+}
+
+section h1 {
+  font-family: Montserrat;
+  color: var(--cherry);
+  margin-bottom: 50px;
+  font-size: 5.5vw;
+  text-transform: uppercase;
+}
+
+section form {
+  display: flex;
+  flex-direction: column;
+}
+
+section form input, textarea, button {
+  width: 60vw;;
+  height: 15px;
+  background-color: rgba(206, 29, 93, .5);
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  font-family: Montserrat;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+section form textarea {
+  resize: vertical;
+  max-height: 30vh;
+  height: 50px;
+}
+
+section form button {
+  width: 66vw;
+  height: 30px;
+  padding: 0;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  section #bg {
+    background-image: url("../img/Logo.svg");
+  }
+
+  section h1 {
+    font-size: 3.5vw;
+  }
+
+  section form input, textarea, button {
+    width: 40vw;
+    height: 30px;
+  }
+
+  section form textarea {
+    max-width: 40vw;
+    height: 125px;
+  }
+
+  section form button {
+    width: 41.5vw;
+    height: 35px;
+  }
+}

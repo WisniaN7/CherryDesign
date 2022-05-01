@@ -1,0 +1,148 @@
+#Warstwa_2 #C, #h, #e, #r, #r2, #y, #LC, #LD {
+  stroke-width: 0.5px;
+  fill: transparent;
+  animation: logoCherry 4000ms ease-in-out forwards;
+  stroke: var(--cherry);
+}
+
+#Warstwa_2 #D, #e2, #s, #i, #dot, #g, #n, #leaf {
+  stroke-width: 0.5px;
+  fill: transparent;
+  animation: logoGreen 4000ms ease-in-out forwards;
+  stroke: var(--green);
+}
+
+#Warstwa_2 #shadow {
+  stroke-width: 0.5px;
+  fill: transparent;
+  animation: logoShadow 4000ms ease-in-out forwards;
+  stroke: var(--cherry-dark);
+}
+
+#Warstwa_2 #leaf2 {
+  animation: leaf 4000ms ease-in-out forwards;
+}
+
+#C {
+  stroke-dasharray: 112.32477569580078px;
+  stroke-dashoffset: -112.32477569580078px;
+}
+
+#h {
+  stroke-dasharray: 135.88861083984375px;
+  stroke-dashoffset: -135.88861083984375px;
+}
+
+#e {
+  stroke-dasharray: 128.1102294921875px;
+  stroke-dashoffset: -128.1102294921875px;
+}
+
+#r {
+  stroke-dasharray: 69.60003662109375px;
+  stroke-dashoffset: -69.60003662109375px;
+}
+
+#r2 {
+  stroke-dasharray: 69.60003662109375px;
+  stroke-dashoffset: -69.60003662109375px;
+}
+
+#y {
+  stroke-dasharray: 152.86639404296875px;
+  stroke-dashoffset: -152.86639404296875px;
+}
+
+#D {
+  stroke-dasharray: 163.61636352539062px;
+  stroke-dashoffset: -163.61636352539062px;
+}
+
+#e2 {
+  stroke-dasharray: 128.1102294921875px;
+  stroke-dashoffset: -128.1102294921875px;
+}
+
+#s {
+  stroke-dasharray: 104.43565368652344px;
+  stroke-dashoffset: -104.43565368652344px;
+}
+
+#i {
+  stroke-dasharray: 57.472442626953125px;
+  stroke-dashoffset: -57.472442626953125px;
+}
+
+#dot {
+  stroke-dasharray: 12.962493896484375px;
+  stroke-dashoffset: -12.962493896484375px;
+}
+
+#g {
+  stroke-dasharray: 173.74685668945312px;
+  stroke-dashoffset: -173.74685668945312px;
+}
+
+#n {
+  stroke-dasharray: 109.73224639892578px;
+  stroke-dashoffset: -109.73224639892578px;
+}
+
+#LC {
+  stroke-dasharray: 288.7666015625px;
+  stroke-dashoffset: -288.7666015625px;
+}
+
+#LD {
+  stroke-dasharray: 540.3626708984375px;
+  stroke-dashoffset: -540.3626708984375px;
+}
+
+#leaf {
+  stroke-dasharray: 198.1743621826172px;
+  stroke-dashoffset: -198.1743621826172px;
+}
+
+@keyframes logoCherry {
+  15% {
+    fill: transparent;
+  }
+  55% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    fill: var(--cherry);
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes logoGreen {
+  15% {
+    fill: transparent;
+  }
+  55% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    fill: var(--green);
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes logoShadow {
+  15% {
+    fill: transparent;
+  }
+  100% {
+    fill: var(--cherry-dark);
+  }
+}
+
+@keyframes leaf {
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
