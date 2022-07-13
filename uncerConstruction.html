@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Jakub Wiśniewski">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CherryDesign</title>
+  <link rel="stylesheet" href="css/construction.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="shortcut icon" href="img/Logo_I.png">
+  <script src="scripts/loading.js"></script>
+</head>
+
+  <body>
+    <div id="loader">
+      <div id="anim"></div>
+    </div>
+    <div id="construction"></div>
+  </body>
+</html>
